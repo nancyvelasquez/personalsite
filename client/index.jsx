@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import { render } from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from './components/Navbar.jsx'
+import Footer from './components/Footer.jsx'
+import Routes from './routes.jsx'
 
 const App = () => (
   <div>
     <Navbar />
+    <Routes />
     <Footer />
   </div>
 )

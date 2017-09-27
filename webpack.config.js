@@ -1,5 +1,5 @@
 module.exports = {
-    entry: './client', // assumes your entry point is the index.js in the root of your project folder
+    entry: './client/index.jsx', // assumes your entry point is the index.js in the root of your project folder
     output: {
       path: __dirname,
       filename: './public/bundle.js' // assumes your bundle.js will also be in the root of your project folder
@@ -8,7 +8,7 @@ module.exports = {
     module: {
       rules: [
         {
-          test: /\.jsx?$/,
+          test: /jsx?$/,
           exclude: /(node_modules)/,
           loader: 'babel-loader',
           options: {

@@ -7,3 +7,12 @@ body {
   main {
     flex: 1 0 auto;
   }
+
+#texts {
+  display: inline;
+  white-space: nowrap;
+}
+
+#image {
+  display: inline;
+}
